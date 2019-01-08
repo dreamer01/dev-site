@@ -1,0 +1,30 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"plugins": ["react"],
+	"globals": {
+		"graphql": false
+	},
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		}
+	},
+	"rules": {
+		"no-console": "warn",
+		"camelcase": "warn",
+		"array-callback-return": "error",
+		"prefer-template": "error",
+		"no-eval": "error",
+		"no-loop-func": "error",
+		"no-param-reassign": "error",
+		"prefer-arrow-callback": "error",
+		"arrow-spacing": "error",
+		"eqeqeq": "error",
+		"no-unneeded-ternary": "error"
+	}
+}
