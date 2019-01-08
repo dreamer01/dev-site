@@ -7,7 +7,7 @@ export default () => (
 	<React.Fragment>
 		<SEO />
 		<div style={{ padding: `2em` }}>
-			<Link to="/blog/">Blog</Link>
+			<Link to="/test/">Blog</Link>
 			<h1>Hello Gatsby!</h1>
 			<p>What a world.</p>
 			<blockquote> Test</blockquote>
