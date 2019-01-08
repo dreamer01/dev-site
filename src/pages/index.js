@@ -1,16 +1,21 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import SEO from "../components/SEO";
+import Landing from "../components/Landing";
+import Services from "../components/Services";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default () => (
 	<React.Fragment>
 		<SEO />
-		<div style={{ padding: `2em` }}>
-			<Link to="/test/">Blog</Link>
-			<h1>Hello Gatsby!</h1>
-			<p>What a world.</p>
-			<blockquote> Test</blockquote>
+		<div style={{ backgroundColor: "#16131d" }}>
+			<Header />
+			<Landing />
+			<Services />
+			<Projects />
+			<Footer />
 		</div>
 	</React.Fragment>
 );

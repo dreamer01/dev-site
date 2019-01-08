@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
+import styled from "styled-components";
 
 import svg404 from "../assets/images/404.svg";
+
+const Button = styled.button`
+	border-radius: 50px;
+	background-color: #f9aaa2;
+	border-width: 5px;
+	border-color: #ff2d3d;
+	padding: 20px;
+	font-size: 24;
+	font-weight: 800;
+`;
 
 export default class NotFound extends Component {
 	render() {
@@ -10,7 +21,7 @@ export default class NotFound extends Component {
 				<img src={svg404} alt="Not Found" width={500} />
 				<h3>Sorry ! Page Not Found</h3>
 				<Link to="/">
-					<button style={styles.button}>Go To Home</button>
+					<Button>Go To Home</Button>
 				</Link>
 			</div>
 		);
@@ -26,14 +37,5 @@ const styles = {
 		alignItems: "center",
 		padding: 100,
 	},
-	button: {
-		borderRadius: 50,
-		backgroundColor: "#f9aaa2",
-		borderWidth: 5,
-		borderColor: "#ff2d3d",
-		color: "#000",
-		padding: 20,
-		fontSize: 24,
-		fontWeight: 800,
-	},
+	button: {},
 };

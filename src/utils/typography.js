@@ -22,7 +22,8 @@ const customTypography = {
 	boldWeight: "bold",
 	overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
 		body: {
-			color: "#011627",
+			//color: "red",
+			color: "#fff",
 		},
 		h1: scale(4 / 4),
 		h2: scale(3 / 4),
