@@ -8,7 +8,6 @@ const SocialIcon = ({ imageUrl }) => {
 				width: 50,
 				backgroundColor: "#fff",
 			}}
-			className="social-icon"
 			src={imageUrl}
 			alt="icon"
 		/>
