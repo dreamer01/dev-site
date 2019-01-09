@@ -1,7 +1,8 @@
 <p align="center">
   <a href="stud2design.netlify.com">
-  </a>
-</p>
-<h1 align="center">
+		<h1 align="center">
   Dev Site
 </h1>
+  </a>
+</p>
+
