@@ -27,7 +27,7 @@ export default class Header extends Component {
 					<img src={logoImg} style={styles.logo} />
 				</Link>
 				<p style={styles.title} />
-				<Link to="/test">
+				<Link to="/blog">
 					<Button>Blogs</Button>
 				</Link>
 			</div>
