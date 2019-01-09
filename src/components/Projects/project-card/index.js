@@ -22,7 +22,6 @@ export default class ProjectCard extends Component {
 				<Card>
 					<h3>{this.props.title}</h3>
 					<p>{this.props.content}</p>
-					<p>{this.props.link}</p>
 				</Card>
 			</a>
 		);
