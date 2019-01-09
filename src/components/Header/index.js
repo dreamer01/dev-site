@@ -7,15 +7,13 @@ import logoImg from "../../assets/images/programmer.svg";
 const Button = styled.button`
 	border-radius: 50px;
 	background-image: linear-gradient(to left, #ff8a00, #da1b60);
-	border-width: 4px;
-	border-color: #ff2d3d;
 	padding: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 24;
 	font-weight: 800;
 	&:hover {
-		border-color: #fff;
+		border-color: #ff2d3d;
 	}
 `;
 

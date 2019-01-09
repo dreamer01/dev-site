@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-	background-image: linear-gradient(to top, #191970, #c4fff9);
+	background: linear-gradient(30deg, rgb(90, 189, 255) 0%, #fff 100%);
+	box-shadow: rgba(52, 152, 219, 0.4) 0px 20px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

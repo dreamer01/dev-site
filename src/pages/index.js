@@ -10,7 +10,7 @@ import Header from "../components/Header";
 export default () => (
 	<React.Fragment>
 		<SEO />
-		<div style={{ backgroundColor: "#16131d" }}>
+		<div style={{}}>
 			<Header />
 			<Landing />
 			<Services />
@@ -19,3 +19,5 @@ export default () => (
 		</div>
 	</React.Fragment>
 );
+
+//backgroundColor: "#16131d"
