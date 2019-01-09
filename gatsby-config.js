@@ -15,6 +15,18 @@ module.exports = {
 				pathToConfigModule: `src/utils/typography.js`,
 			},
 		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Pushpendra Dev Site`,
+				short_name: `Pushpendra`,
+				start_url: `/`,
+				background_color: `#ffffff`,
+				theme_color: `#00003c`,
+				display: `standalone`,
+				icon: `src/assets/images/programmer.svg`,
+			},
+		},
 		`gatsby-plugin-styled-components`,
 		`gatsby-plugin-netlify`,
 	],
