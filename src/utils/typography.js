@@ -3,7 +3,7 @@ import Typography from "typography";
 const customTypography = {
 	baseFontSize: "16px",
 	baseLineHeight: 1.5,
-	bodyFontFamily: ["Quicksand"],
+	bodyFontFamily: ["Quicksand", "Oxygen"],
 	scaleRatio: 2.25,
 	bodyWeight: 400,
 	headerWeight: 500,
@@ -24,32 +24,32 @@ const customTypography = {
 			//color: "#fff",
 		},
 		h1: {
-			fontFamily: ["Raleway"].join(","),
+			fontFamily: ["Raleway", "Oxygen"].join(","),
 			fontSize: scale(4 / 4),
 			color: "#00003c",
 		},
 		h2: {
-			fontFamily: ["Raleway"].join(","),
+			fontFamily: ["Raleway", "Oxygen"].join(","),
 			fontSize: scale(3 / 4),
 			color: "#00003c",
 		},
 		h3: {
-			fontFamily: ["Raleway"].join(","),
+			fontFamily: ["Raleway", "Oxygen"].join(","),
 			fontSize: scale(2 / 4),
 			color: "#00003c",
 		},
 		h4: {
-			fontFamily: ["Raleway"].join(","),
+			fontFamily: ["Raleway", "Oxygen"].join(","),
 			fontSize: scale(1 / 6),
 			color: "#00003c",
 		},
 		h5: {
-			fontFamily: ["Raleway"].join(","),
+			fontFamily: ["Raleway", "Oxygen"].join(","),
 			fontSize: scale(-1 / 6),
 			color: "#00003c",
 		},
 		h6: {
-			fontFamily: ["Raleway"].join(","),
+			fontFamily: ["Raleway", "Oxygen"].join(","),
 			fontSize: scale(-2 / 6),
 			color: "#00003c",
 		},
