@@ -15,11 +15,16 @@ const Card = styled.div`
 export default class ProjectCard extends Component {
 	render() {
 		return (
-			<Card>
-				<p>{this.props.title}</p>
-				<p>{this.props.content}</p>
-				<p>{this.props.link}</p>
-			</Card>
+			<a
+				href={`${this.props.link}`}
+				style={{ textDecoration: "none", color: "inherit" }}
+			>
+				<Card>
+					<h3>{this.props.title}</h3>
+					<p>{this.props.content}</p>
+					<p>{this.props.link}</p>
+				</Card>
+			</a>
 		);
 	}
 }

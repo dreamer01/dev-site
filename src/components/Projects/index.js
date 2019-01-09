@@ -8,7 +8,8 @@ const Wrapper = styled.div`
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	margin-left: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
 	margin-top: 100px;
 `;
 
@@ -16,11 +17,12 @@ const ProjectContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 50px;
+	grid-column-gap: 2rem;
+	grid-row-gap: 3rem;
+	justify-items: center;
 	@media (max-width: 1200px) {
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 0.5rem;
+		grid-gap: 1rem;
 	}
 	@media (max-width: 900px) {
 		grid-template-columns: 1fr;

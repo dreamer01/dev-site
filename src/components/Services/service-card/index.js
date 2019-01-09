@@ -17,7 +17,7 @@ export default class ServicesCard extends Component {
 		return (
 			<Card>
 				<img src={this.props.imageUrl} style={styles.serviceIcon} />
-				<p>{this.props.title}</p>
+				<h3>{this.props.title}</h3>
 				<p>{this.props.details}</p>
 			</Card>
 		);

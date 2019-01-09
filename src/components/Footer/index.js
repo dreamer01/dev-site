@@ -6,7 +6,7 @@ const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 100px;
+	padding: 100px;
 `;
 
 const IconWrapper = styled.div`

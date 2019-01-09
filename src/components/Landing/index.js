@@ -4,6 +4,15 @@ import styled from "styled-components";
 
 import backgoundImg from "../../assets/images/landing.svg";
 
+const Wrapper = styled.div`
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	padding-left: 100px;
+	padding-right: 100px;
+	align-items: center;
+`;
+
 const Title = styled.h1`
 	background: linear-gradient(to right, #ff8a00, #da1b60);
 	-webkit-background-clip: text;
@@ -14,7 +23,7 @@ const Title = styled.h1`
 export default class Landing extends Component {
 	render() {
 		return (
-			<div style={styles.wrapper}>
+			<Wrapper>
 				<div style={styles.description}>
 					<Title>Hello, I'm Pushpendra Singh.</Title>
 					<p style={{ fontSize: 36 }}>
@@ -23,26 +32,17 @@ export default class Landing extends Component {
 					</p>
 				</div>
 				<img src={backgoundImg} style={styles.bgImgage} />
-			</div>
+			</Wrapper>
 		);
 	}
 }
 
 const styles = {
-	wrapper: {
-		display: "flex",
-		flex: 1,
-		width: "100vw",
-		paddingLeft: 100,
-		paddingRight: 100,
-		alignItems: "center",
-	},
 	description: {
-		flex: 1,
 		flexDirection: "column",
 	},
 	bgImgage: {
-		width: 800,
+		width: "60%",
 		margin: 50,
 	},
 };
