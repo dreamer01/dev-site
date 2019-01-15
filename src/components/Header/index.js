@@ -25,8 +25,8 @@ export default class Header extends Component {
 					<img src={logoImg} style={styles.logo} />
 				</Link>
 				<p style={styles.title} />
-				<Link to="/blog">
-					<Button>Blogs</Button>
+				<Link to={this.props.goto}>
+					<Button>{this.props.gotoTitle}</Button>
 				</Link>
 			</div>
 		);

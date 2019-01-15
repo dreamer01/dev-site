@@ -11,7 +11,7 @@ export default () => (
 	<React.Fragment>
 		<SEO />
 		<div style={{}}>
-			<Header />
+			<Header goto="/blog" gotoTitle="Blogs" />
 			<Landing />
 			<Services />
 			<Projects />
