@@ -20,13 +20,16 @@ export default ({ data }) => {
 				<div>
 					{data.allMarkdownRemark.edges.map(({ node }) => (
 						<div key={node.id}>
-							<Link to={node.fields.slug}>
-								<h3>
-									{node.frontmatter.title}{" "}
+							<Link
+								to={node.fields.slug}
+								style={{ textDecoration: "none", color: "inherit" }}
+							>
+								<h3 style={{ marginBottom: 0 }}>
+									{node.frontmatter.title}
 									<span>— {node.frontmatter.date}</span>
 								</h3>
-								<p>{node.frontmatter.subtext}</p>
 							</Link>
+							<p>{node.frontmatter.subtext}</p>
 						</div>
 					))}
 				</div>
