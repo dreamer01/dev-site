@@ -7,6 +7,9 @@ const Wrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 100px;
+	@media (max-width: 900px) {
+		flex-direction: column;
+	}
 `;
 
 const IconWrapper = styled.div`
@@ -27,11 +30,24 @@ const Copyright = styled.div`
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 32px;
+
+	@media (max-width: 900px) {
+		margin-top: 25px;
+		margin-left: 0px;
+		border-left: none;
+		font-size: 24px;
+		text-align: center;
+		border-top: 4px solid #da1b60;
+	}
 `;
 
 const SocialIcon = styled.a`
 	width: 50px;
 	height: 50px;
+	@media (max-width: 500px) {
+		width: 30px;
+		height: 30px;
+	}
 `;
 
 export default class Footer extends Component {

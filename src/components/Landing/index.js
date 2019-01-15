@@ -7,10 +7,22 @@ import backgoundImg from "../../assets/images/landing.svg";
 const Wrapper = styled.div`
 	display: flex;
 	flex: 1;
-	flex-direction: row;
 	padding-left: 100px;
 	padding-right: 100px;
 	align-items: center;
+
+	@media (max-width: 900px) {
+		flex-direction: column;
+	}
+`;
+
+const Image = styled.img`
+	width: 35%;
+	justify-self: flex-end;
+	margin: 50px;
+	@media (max-width: 900px) {
+		width: 65%;
+	}
 `;
 
 const Title = styled.h1`
@@ -27,11 +39,12 @@ export default class Landing extends Component {
 				<div style={styles.description}>
 					<Title>Hello, I'm Pushpendra Singh.</Title>
 					<p style={{ fontSize: 36 }}>
-						I'm creating web and mobile experiences for the next generation
-						consumer-facing companies.
+						I'm a Full Stack Developer based in Gurugram, India. I have passion
+						for intutive web and mobile experiences for the next generation
+						consumer-facing companies. My jam is JavaScript.
 					</p>
 				</div>
-				<img src={backgoundImg} style={styles.bgImgage} />
+				<Image src={backgoundImg} style={styles.bgImgage} />
 			</Wrapper>
 		);
 	}
@@ -39,10 +52,7 @@ export default class Landing extends Component {
 
 const styles = {
 	description: {
+		flex: 1,
 		flexDirection: "column",
-	},
-	bgImgage: {
-		width: "60%",
-		margin: 50,
 	},
 };

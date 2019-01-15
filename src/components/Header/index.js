@@ -4,6 +4,11 @@ import styled from "styled-components";
 
 import logoImg from "../../assets/images/programmer.svg";
 
+const Logo = styled.img`
+	width: 50%;
+	margin-top: 50px;
+`;
+
 const Button = styled.button`
 	border-radius: 50px;
 	background-image: linear-gradient(to left, #ff8a00, #da1b60);
@@ -22,7 +27,7 @@ export default class Header extends Component {
 		return (
 			<div style={styles.wrapper}>
 				<Link to="/" style={styles.link}>
-					<img src={logoImg} style={styles.logo} />
+					<Logo src={logoImg} />
 				</Link>
 				<p style={styles.title} />
 				<Link to={this.props.goto}>
@@ -40,10 +45,6 @@ const styles = {
 		paddingLeft: 100,
 		paddingRight: 300,
 		alignItems: "center",
-	},
-	logo: {
-		width: 100,
-		marginTop: 50,
 	},
 	title: {
 		flex: 1,
